@@ -8,13 +8,13 @@ import setIsModalOpen from './DashboardLayout';
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDXzMynr6kw9Km61wgnAiUIlmBvmDFmjiI",
-    authDomain: "madrix-19d11.firebaseapp.com",
-    projectId: "madrix-19d11",
-    storageBucket: "madrix-19d11.firebasestorage.app",
-    messagingSenderId: "333035896959",
-    appId: "1:333035896959:web:23384817cb7d1f713bbf4a",
-    measurementId: "G-SZHZ1NQWDL"
+    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID,
+    measurementId: process.env.REACT_APP_MEASUREMENT_ID,
   };
 
 const app = initializeApp(firebaseConfig);
